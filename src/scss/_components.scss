@@ -7,7 +7,7 @@
   cursor: pointer;
   display: inline-flex;
   font-family: "Martian Mono", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem);
   font-weight: 600;
   gap: 1rem;
   justify-content: center;
@@ -15,6 +15,7 @@
   line-height: 1.3em;
   padding: 1.25rem 1.5rem;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
     background: var(--gradient);

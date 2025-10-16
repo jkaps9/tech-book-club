@@ -34,6 +34,23 @@ header {
   }
 }
 
+.hero {
+  margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hero__title {
+    @include global.text-preset-1;
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+  }
+}
+
 footer {
   text-align: center;
 }
