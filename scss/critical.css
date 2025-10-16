@@ -116,9 +116,7 @@ select {
   }
 }
 body {
-  line-height: 1.6em;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--neutral-900);
+  color: var(--neutral-700);
 }
 
 .container {
@@ -136,7 +134,7 @@ body {
   cursor: pointer;
   display: inline-flex;
   font-family: "Martian Mono", sans-serif;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem);
   font-weight: 600;
   gap: 1rem;
   justify-content: center;
@@ -144,12 +142,36 @@ body {
   line-height: 1.3em;
   padding: 1.25rem 1.5rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .btn--primary:hover {
   background: var(--gradient);
 }
 .btn--primary:focus, .btn--primary:active {
   box-shadow: 0 0 0 3px var(--neutral-0), 0 0 0 5px var(--neutral-700);
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.testimonial .testimonial__image {
+  max-width: 6.875rem;
+}
+.testimonial .testimonial__rating {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial .testimonial__rating__stars {
+  display: flex;
+}
+.testimonial .testimonial__rating__text {
+  font-size: 0.875rem;
+  font-family: "Martian Mono", sans-serif;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: -1px;
 }
 
 :root {
@@ -173,6 +195,32 @@ body {
 
 header .navbar {
   padding: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem) 0;
+}
+
+.hero {
+  margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+}
+.hero .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hero .hero__title {
+  font-family: "Martian Mono", sans-serif;
+  font-size: clamp(2.375rem, 0.9437rem + 6.1069vw, 3.875rem);
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: -2px;
+  background: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+.hero .hero__text {
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.4em;
 }
 
 footer {
