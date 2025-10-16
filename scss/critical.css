@@ -117,6 +117,7 @@ select {
 }
 body {
   color: var(--neutral-700);
+  background-color: var(--neutral-100);
 }
 
 .container {
@@ -190,15 +191,29 @@ body {
     var(--light-salmon-50) 100%
   );
   --container-max-width: 70rem;
-  --container-width: 90%;
+  --container-width: 92.75%;
 }
 
 header .navbar {
   padding: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem) 0;
 }
 
+body {
+  position: relative;
+}
+
+.bg--top {
+  position: absolute;
+  z-index: -1;
+}
+.bg--top .second {
+  visibility: hidden;
+  height: 0;
+}
+
 .hero {
   margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  padding-bottom: 5rem;
 }
 .hero .hero__container {
   display: flex;
@@ -233,5 +248,6 @@ header .navbar {
 }
 
 footer {
+  background-color: white;
   text-align: center;
 }
