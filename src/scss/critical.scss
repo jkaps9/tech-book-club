@@ -101,7 +101,7 @@ h2 {
 
   .features__list {
     display: grid;
-    gap: 1rem;
+    gap: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
   }
 
   .features__item {
@@ -141,6 +141,18 @@ footer {
 
     .hero__image {
       min-width: 33.75rem;
+    }
+  }
+
+  .features {
+    .features__container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .features__image {
+      max-width: 35rem;
     }
   }
 }
