@@ -1,4 +1,4 @@
 ---
-title: "Eleventy Template"
+title: 'Home'
 layout: "layouts/home.html"
 ---

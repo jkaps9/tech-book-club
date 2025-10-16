@@ -38,7 +38,7 @@ export default function (config) {
   });
 
   return {
-    pathPrefix: "/eleventy-template/",
+    pathPrefix: "/tech-book-club/",
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
