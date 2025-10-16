@@ -37,6 +37,12 @@ header {
 
 .hero {
   margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -53,6 +59,11 @@ header {
 
   .hero__text {
     @include text.text-preset-5;
+  }
+
+  .hero__image {
+    border-radius: 1.35vw;
+    overflow: hidden;
   }
 }
 
