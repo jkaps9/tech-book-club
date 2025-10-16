@@ -26,7 +26,7 @@
 
   // CONTAINER
   --container-max-width: 70rem;
-  --container-width: 92.75%;
+  --container-width: 92.75vw;
 }
 
 header {
@@ -61,6 +61,7 @@ body {
   .hero__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
   }
 
@@ -88,6 +89,9 @@ footer {
 }
 
 @media (min-width: 48rem) {
+  :root {
+    --container-width: 91.5vw;
+  }
   .bg--top {
     & .second {
       visibility: visible;
