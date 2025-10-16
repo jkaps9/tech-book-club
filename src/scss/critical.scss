@@ -93,8 +93,27 @@ h2 {
 .features {
   background-color: var(--neutral-0);
   margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
-  .features__title {
-    margin-bottom: clamp(1.5rem, 0.9036rem + 2.5445vw, 2.125rem);
+
+  .features__container {
+    display: grid;
+    gap: clamp(2.5rem, -0.3571rem + 5.9524vw, 5rem);
+  }
+
+  .features__content {
+    display: grid;
+    gap: clamp(1.5rem, 0.9036rem + 2.5445vw, 2.125rem);
+  }
+
+  .features__list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .features__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.875rem;
   }
 }
 
