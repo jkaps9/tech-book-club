@@ -93,6 +93,9 @@ h2 {
 .features {
   background-color: var(--neutral-0);
   margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
+  .features__title {
+    margin-bottom: clamp(1.5rem, 0.9036rem + 2.5445vw, 2.125rem);
+  }
 }
 
 footer {
