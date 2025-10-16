@@ -2,6 +2,7 @@
 @use "reset";
 @use "global";
 @use "components";
+@use "text";
 @use "sass:map";
 
 :root {
@@ -43,11 +44,15 @@ header {
   }
 
   .hero__title {
-    @include global.text-preset-1;
+    @include text.text-preset-1;
     background: var(--text-gradient);
     background-clip: text;
     color: transparent;
     text-shadow: none;
+  }
+
+  .hero__text {
+    @include text.text-preset-5;
   }
 }
 

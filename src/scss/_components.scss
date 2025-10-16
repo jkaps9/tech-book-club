@@ -1,3 +1,5 @@
+@use "text";
+
 .btn--primary {
   align-items: center;
   background: var(--light-salmon-50);
@@ -26,5 +28,28 @@
     box-shadow:
       0 0 0 3px var(--neutral-0),
       0 0 0 5px var(--neutral-700);
+  }
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  .testimonial__image {
+    max-width: 6.875rem;
+  }
+
+  .testimonial__rating {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial__rating__stars {
+    display: flex;
+  }
+
+  .testimonial__rating__text {
+    @include text.text-preset-7;
   }
 }
