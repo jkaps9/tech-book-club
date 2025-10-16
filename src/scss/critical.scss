@@ -86,3 +86,12 @@ footer {
   background-color: white;
   text-align: center;
 }
+
+@media (min-width: 48rem) {
+  .bg--top {
+    & .second {
+      visibility: visible;
+      height: auto;
+    }
+  }
+}
