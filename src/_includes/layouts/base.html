@@ -18,6 +18,10 @@
     />
   </head>
   <body>
+    <div class="bg--top">
+      <div class="first">{% include "svgs/pattern-light-bg.svg" %}</div>
+      <div class="second">{% include "svgs/pattern-light-bg.svg" %}</div>
+    </div>
     {% include "partials/site-header.html" %}
     <main>{% block content %}{% endblock %}</main>
     {% include "partials/site-footer.html" %}

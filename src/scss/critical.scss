@@ -35,8 +35,23 @@ header {
   }
 }
 
+body {
+  position: relative;
+}
+
+.bg--top {
+  position: absolute;
+  z-index: -1;
+
+  & .second {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
 .hero {
   margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  padding-bottom: 5rem;
   .hero__container {
     display: flex;
     flex-direction: column;
@@ -68,5 +83,6 @@ header {
 }
 
 footer {
+  background-color: white;
   text-align: center;
 }
