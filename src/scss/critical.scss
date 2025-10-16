@@ -26,7 +26,7 @@
 
   // CONTAINER
   --container-max-width: 73.125rem;
-  --container-width: 92.75vw;
+  --container-width: 91.5%;
 }
 
 header {
@@ -37,6 +37,18 @@ header {
 
 body {
   position: relative;
+}
+
+p {
+  @include text.text-preset-5;
+}
+
+h1 {
+  @include text.text-preset-1;
+}
+
+h2 {
+  @include text.text-preset-2;
 }
 
 .bg--top {
@@ -66,15 +78,10 @@ body {
   }
 
   .hero__title {
-    @include text.text-preset-1;
     background: var(--text-gradient);
     background-clip: text;
     color: transparent;
     text-shadow: none;
-  }
-
-  .hero__text {
-    @include text.text-preset-5;
   }
 
   .hero__image {
@@ -83,15 +90,17 @@ body {
   }
 }
 
+.features {
+  background-color: var(--neutral-0);
+  margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
+}
+
 footer {
   background-color: white;
   text-align: center;
 }
 
 @media (min-width: 48rem) {
-  :root {
-    --container-width: 91.5vw;
-  }
   .bg--top {
     & .second {
       visibility: visible;
