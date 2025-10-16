@@ -1,17 +1,3 @@
 {
-  "name": "Tech Book Club",
-  "navigation": [
-    {
-      "text": "About",
-      "url": "/about/"
-    },
-    {
-      "text": "Service",
-      "url": "/service/"
-    },
-    {
-      "text": "Projects",
-      "url": "/projects/"
-    }
-  ]
+  "name": "Tech Book Club"
 }
