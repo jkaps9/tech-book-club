@@ -301,6 +301,11 @@ h2 {
   gap: 1.5rem;
   max-width: 534px;
 }
+.technologies__logos {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
 
 footer {
   background-color: white;
@@ -336,5 +341,15 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .technologies__image {
+    position: relative;
+  }
+  .technologies__logos {
+    visibility: visible;
+    height: auto;
+    position: absolute;
+    bottom: 31px;
+    left: -80px;
   }
 }
