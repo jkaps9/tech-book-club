@@ -1,55 +1,14 @@
 <section class="journey">
   <div class="container journey__container">
     <div class="journey__content">
-      <h2 class="journey__title">
-        Not your average book
-        <span class="journey__encircled-text">
-          <div class="circle-img">
-            <img
-              src="./assets/images/pattern-circle.png"
-              alt="circle"
-            />
-          </div>
-          club
-        </span>
-      </h2>
-      <p class="journey__text">
-        Connect with a community that speaks your lagnuage - from
-        <strong>Python</strong>
-        to
-        <strong>TypeScript</strong>
-        and everything in between. Our discussions blend technical depth with
-        practical applications.
-      </p>
-    </div>
-    <div class="journey__image">
-      <div class="journey__logos">{% include "svgs/logos-tech.svg" %}</div>
-      <picture>
-        <!-- Desktop (1240px and up) -->
-        <source
-          media="(min-width: 1240px)"
-          srcset="./assets/images/image-not-average-desktop.webp"
-        />
-
-        <!-- Tablet (768px to 1439px) -->
-        <source
-          media="(min-width: 768px)"
-          srcset="./assets/images/image-not-average-tablet.webp"
-        />
-
-        <!-- Mobile (up to 767px) -->
-        <source
-          media="(max-width: 767px)"
-          srcset="./assets/images/image-not-average-mobile.webp"
-        />
-
-        <!-- Fallback image -->
-        <img
-          class="img--border-radius"
-          src="./assets/images/image-not-average-mobile.webp"
-          alt="side view people holding books"
-        />
-      </picture>
+      <h2 class="journey__title">Your tech reading journey</h2>
+      <ul class="journey__list">
+        {% for feature in site.journey %}
+          <li class="journey__item">
+            <p class="journey__text">{{ feature }}</p>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
