@@ -114,6 +114,8 @@ h2 {
 }
 
 .technologies {
+  background-color: var(--neutral-0);
+  margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
   &__container {
     display: grid;
     gap: clamp(2.5rem, -0.3571rem + 5.9524vw, 5rem);
@@ -155,6 +157,10 @@ h2 {
 }
 
 .journey {
+  background-color: var(--neutral-0);
+  margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
+  padding-block: 4rem;
+  padding-inline: 1rem;
   &__container {
     display: grid;
     gap: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
@@ -166,15 +172,23 @@ h2 {
   }
 
   &__item {
+    display: grid;
+    gap: clamp(1.25rem, 1.0115rem + 1.0178vw, 1.5rem);
     p {
       @include text.text-preset-6;
     }
   }
 
   &__number {
-    border: 1px solid var(--neutral-700);
+    border: 2px solid var(--neutral-900);
+    border-radius: 4px;
     display: inline-block;
     padding: 0.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
+    height: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
   }
 }
 
@@ -240,6 +254,13 @@ footer {
 
       bottom: 31px;
       left: -80px;
+    }
+  }
+
+  .journey {
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+      flex-direction: row;
     }
   }
 }
