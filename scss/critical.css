@@ -306,6 +306,24 @@ h2 {
   height: 0;
   position: absolute;
 }
+.technologies__encircled-text {
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+.technologies__encircled-text .circle-img {
+  position: absolute;
+  left: clamp(-1rem, 0.4656rem - 3.0534vw, -0.25rem);
+  top: -3px;
+  z-index: 2;
+  height: clamp(2.9375rem, 1.6851rem + 5.3435vw, 4.25rem);
+  width: clamp(6.8125rem, 3.8306rem + 12.7226vw, 9.9375rem);
+}
+.technologies__encircled-text .circle-img img {
+  width: 100%;
+  height: 100%;
+}
 
 footer {
   background-color: white;
