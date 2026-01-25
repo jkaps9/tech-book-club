@@ -228,6 +228,7 @@ h2 {
   font-weight: 600;
   line-height: 1.3em;
   letter-spacing: -2px;
+  color: var(--neutral-900);
 }
 
 .bg--top {
@@ -243,18 +244,18 @@ h2 {
   margin-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
   padding-bottom: 5rem;
 }
-.hero .hero__container {
+.hero__container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-.hero .hero__content {
+.hero__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
 }
-.hero .hero__title {
+.hero__title {
   background: var(--text-gradient);
   background-clip: text;
   color: transparent;
@@ -265,23 +266,34 @@ h2 {
   background-color: var(--neutral-0);
   margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
 }
-.features .features__container {
+.features__container {
   display: grid;
   gap: clamp(2.5rem, -0.3571rem + 5.9524vw, 5rem);
 }
-.features .features__content {
+.features__content {
   display: grid;
   gap: clamp(1.5rem, 0.9036rem + 2.5445vw, 2.125rem);
 }
-.features .features__list {
+.features__list {
   display: grid;
   gap: clamp(1rem, 0.5229rem + 2.0356vw, 1.5rem);
 }
-.features .features__item {
+.features__item {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.875rem;
+}
+
+.technologies__container {
+  display: grid;
+  gap: clamp(2.5rem, -0.3571rem + 5.9524vw, 5rem);
+}
+.technologies__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
 footer {
