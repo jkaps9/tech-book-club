@@ -1,14 +1,13 @@
 <section class="journey">
   <div class="container journey__container">
-    <div class="journey__content">
-      <h2 class="journey__title">Your tech reading journey</h2>
-      <ul class="journey__list">
-        {% for feature in site.journey %}
-          <li class="journey__item">
-            <p class="journey__text">{{ feature }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+    <h2 class="journey__title">Your tech reading journey</h2>
+    <ul class="journey__list">
+      {% for feature in site.journey %}
+        <li class="journey__item">
+          <p class="number">{{ loop.index }}</p>
+          <p class="journey__text">{{ feature }}</p>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
