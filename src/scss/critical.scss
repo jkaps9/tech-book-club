@@ -126,6 +126,12 @@ h2 {
     gap: 1.5rem;
     max-width: 534px;
   }
+
+  &__logos {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+  }
 }
 
 footer {
@@ -177,6 +183,19 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
+    }
+
+    &__image {
+      position: relative;
+    }
+
+    &__logos {
+      visibility: visible;
+      height: auto;
+      position: absolute;
+
+      bottom: 31px;
+      left: -80px;
     }
   }
 }
