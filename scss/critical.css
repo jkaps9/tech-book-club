@@ -411,7 +411,7 @@ h3 {
   border: 1px solid var(--neutral-200);
   border-radius: 0.5rem;
   display: grid;
-  gap: 2rem;
+  gap: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
   padding: 1.5rem;
 }
 .pricing__card .top {
@@ -422,6 +422,9 @@ h3 {
 .pricing__card .top hr {
   color: var(--neutral-200);
   width: 100%;
+}
+.pricing__card .btn--primary {
+  z-index: 2;
 }
 .pricing__card--featured {
   background-color: var(--neutral-100);
@@ -472,6 +475,9 @@ footer {
     visibility: visible;
     height: auto;
   }
+  .pricing__card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 64rem) {
   .bg--top .second {
@@ -507,8 +513,22 @@ footer {
     bottom: 31px;
     left: -80px;
   }
+  .journey__title {
+    margin-inline: auto;
+  }
   .journey__list {
     grid-template-columns: repeat(4, 1fr);
     flex-direction: row;
+  }
+  .pricing__title, .pricing__card-container {
+    margin: 0 auto;
+  }
+  .pricing__card-container {
+    display: flex;
+    align-items: center;
+  }
+  .pricing__card--featured {
+    padding-block: 2.5rem;
+    min-width: 350px;
   }
 }
