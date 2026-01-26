@@ -242,7 +242,7 @@ h3 {
     border: 1px solid var(--neutral-200);
     border-radius: 0.5rem;
     display: grid;
-    gap: 2rem;
+    gap: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
     padding: 1.5rem;
 
     .top {
@@ -254,6 +254,10 @@ h3 {
         color: var(--neutral-200);
         width: 100%;
       }
+    }
+
+    .btn--primary {
+      z-index: 2;
     }
 
     &--featured {
@@ -307,6 +311,12 @@ footer {
     & .second {
       visibility: visible;
       height: auto;
+    }
+  }
+
+  .pricing {
+    &__card-container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -366,6 +376,22 @@ footer {
     &__list {
       grid-template-columns: repeat(4, 1fr);
       flex-direction: row;
+    }
+  }
+
+  .pricing {
+    &__title,
+    &__card-container {
+      margin: 0 auto;
+    }
+    &__card-container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__card--featured {
+      padding-block: 2.5rem;
+      min-width: 350px;
     }
   }
 }
