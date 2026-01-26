@@ -407,6 +407,7 @@ h3 {
   gap: 1.5rem;
 }
 .pricing__card {
+  background-color: var(--neutral-0);
   border: 1px solid var(--neutral-200);
   border-radius: 0.5rem;
   display: grid;
@@ -416,10 +417,22 @@ h3 {
 .pricing__card .top {
   display: grid;
   gap: 1.5rem;
+  z-index: 2;
 }
 .pricing__card .top hr {
   color: var(--neutral-200);
   width: 100%;
+}
+.pricing__card--featured {
+  background-color: var(--neutral-100);
+  position: relative;
+}
+.pricing__card--featured .glow {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 100%;
+  z-index: 1;
 }
 .pricing__membership-inclusions {
   display: grid;
