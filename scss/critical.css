@@ -237,6 +237,7 @@ h2 {
 }
 
 .bg--top {
+  background-color: var(--neutral-100);
   position: absolute;
   z-index: -1;
 }
@@ -330,7 +331,6 @@ h2 {
 }
 
 .journey {
-  background-color: var(--neutral-0);
   margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
 }
 .journey__container {
