@@ -1,55 +1,67 @@
-<sectio class="pricing">
+<section class="pricing">
   <div class="container pricing__container">
     <h2 class="pricing__title">Membership options</h2>
     <div class="pricing__card-container">
-        <div class="pricing__card">
-            <h3>Starter</h3>
-            <p class="price"><span class="amount">$19</span><span class="time-period">/month</span></p>
-            <hr>
-            <ul class="pricing__membership-inclusions">
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">1 book/month</p>
-                </li>
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">Online forums</p>
-                </li>
-            </ul>
-            <a class="btn--primary">SUBSCRIBE NOW</a>
+      <div class="pricing__card">
+        <div class="top">
+          <h3>Starter</h3>
+          <p class="price">
+            <span class="amount">$19</span>
+            <span class="duration">/month</span>
+          </p>
+          <hr />
+          <ul class="pricing__membership-inclusions">
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">1 book/month</p>
+            </li>
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">Online forums</p>
+            </li>
+          </ul>
         </div>
-        <div class="pricing__card pricing__card--featured">
-            <h3>Pro</h3>
-            <p class="price"><span class="amount">$29</span><span class="time-period">/month</span></p>
-            <hr>
-            <ul class="pricing__membership-inclusions">
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">2 book/month</p>
-                </li>
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">Virtual meetups</p>
-                </li>
-            </ul>
-            <a class="btn--primary">SUBSCRIBE NOW</a>
+        <a class="btn--primary">SUBSCRIBE NOW</a>
+      </div>
+      <div class="pricing__card pricing__card--featured">
+        <div class="top">
+          <h3>Pro</h3>
+          <p class="price">
+            <span class="amount">$29</span>
+            <span class="duration">/month</span>
+          </p>
+          <hr />
+          <ul class="pricing__membership-inclusions">
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">2 book/month</p>
+            </li>
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">Virtual meetups</p>
+            </li>
+          </ul>
         </div>
-        <div class="pricing__card">
-            <h3>Enterprise</h3>
-            <p class="price"><span class="amount">Custom</span></p>
-            <hr>
-            <ul class="pricing__membership-inclusions">
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">Team access</p>
-                </li>
-                <li class="membership-inclusions__item">
-                    {% include "svgs/icon-check.svg" %}
-                    <p class="pricing__text">Private sessions</p>
-                </li>
-            </ul>
-            <a class="btn--primary">SUBSCRIBE NOW</a>
+        <a class="btn--primary">SUBSCRIBE NOW</a>
+      </div>
+      <div class="pricing__card">
+        <div class="top">
+          <h3>Enterprise</h3>
+          <p class="price"><span class="amount">Custom</span></p>
+          <hr />
+          <ul class="pricing__membership-inclusions">
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">Team access</p>
+            </li>
+            <li class="membership-inclusions__item">
+              {% include "svgs/icon-check.svg" %}
+              <p class="pricing__text">Private sessions</p>
+            </li>
+          </ul>
         </div>
+        <a class="btn--primary">SUBSCRIBE NOW</a>
+      </div>
     </div>
   </div>
 </section>
