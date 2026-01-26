@@ -236,6 +236,15 @@ h2 {
   color: var(--neutral-900);
 }
 
+h3 {
+  font-family: "Martian Mono", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+
 .bg--top {
   background-color: var(--neutral-100);
   position: absolute;
@@ -384,6 +393,60 @@ h2 {
   justify-content: center;
   width: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
   height: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
+}
+
+.pricing {
+  margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
+}
+.pricing__container {
+  display: grid;
+  gap: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+}
+.pricing__card-container {
+  display: grid;
+  gap: 1.5rem;
+}
+.pricing__card {
+  border: 1px solid var(--neutral-200);
+  border-radius: 0.5rem;
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+.pricing__card .top {
+  display: grid;
+  gap: 1.5rem;
+}
+.pricing__card .top hr {
+  color: var(--neutral-200);
+  width: 100%;
+}
+.pricing__membership-inclusions {
+  display: grid;
+  gap: 1rem;
+}
+.pricing .membership-inclusions__item {
+  display: flex;
+  gap: 0.75rem;
+}
+.pricing .price {
+  display: flex;
+  gap: 0.5rem;
+}
+.pricing .amount {
+  font-family: "Martian Mono", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--neutral-900);
+}
+.pricing .duration {
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
 }
 
 footer {
