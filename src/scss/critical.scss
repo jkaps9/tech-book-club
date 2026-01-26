@@ -53,6 +53,7 @@ h2 {
 }
 
 .bg--top {
+  background-color: var(--neutral-100);
   position: absolute;
   z-index: -1;
 
@@ -157,7 +158,6 @@ h2 {
 }
 
 .journey {
-  background-color: var(--neutral-0);
   margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
 
   &__container {
@@ -191,6 +191,7 @@ h2 {
   }
 
   // TODO: fix journey bg image
+
   &__list {
     display: grid;
     gap: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
