@@ -1,27 +1,32 @@
-<footer class="bg-dark">
+<footer class="bg--dark">
   <div class="container">
     <div class="footer__content">
       <h2>Ready to debug your reading list?</h2>
-      <a
-        href="#"
-        class="btn--primary"
-      >
-        Review Membership Options {% include "svgs/icon-arrow-up.svg" %}
-      </a>
-      <div class="footer__trust-row">
-        <img
-          src="{{ './assets/images/image-avatars.webp' | url }}"
-          alt="testimonial images"
-        />
-        <div class="right">
-          <div class="stars">
-            {% include "svgs/icon-star.svg" %}
-            {% include "svgs/icon-star.svg" %}
-            {% include "svgs/icon-star.svg" %}
-            {% include "svgs/icon-star.svg" %}
-            {% include "svgs/icon-star.svg" %}
+      <div class="bottom">
+        <a
+          href="#"
+          class="btn--primary"
+        >
+          Review Membership Options {% include "svgs/icon-arrow-up.svg" %}
+        </a>
+        <div class="testimonial">
+          <img
+            class="testimonial__image"
+            src="{{ './assets/images/image-avatars.webp' | url }}"
+            alt="testimonial images"
+          />
+          <div class="testimonial__rating">
+            <div class="testimonial__rating__stars">
+              {% include "svgs/icon-star.svg" %}
+              {% include "svgs/icon-star.svg" %}
+              {% include "svgs/icon-star.svg" %}
+              {% include "svgs/icon-star.svg" %}
+              {% include "svgs/icon-star.svg" %}
+            </div>
+            <p class="testimonial__rating__text">
+              200+ developers joined already
+            </p>
           </div>
-          <p>200+ developers joined already</p>
         </div>
       </div>
     </div>
