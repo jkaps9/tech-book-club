@@ -268,7 +268,9 @@ figure footer cite {
 }
 
 .bg--dark {
+  position: relative;
   background-color: var(--neutral-900);
+  z-index: -1;
 }
 .bg--dark h2,
 .bg--dark p,
@@ -507,9 +509,11 @@ figure footer cite {
 
 .footer__bg-image {
   position: absolute;
-  height: auto;
+  height: 100%;
   bottom: 0;
+  left: 0;
   width: 100%;
+  z-index: 2;
 }
 .footer__bg-image div {
   height: auto;
@@ -517,7 +521,9 @@ figure footer cite {
 }
 
 footer {
+  position: relative;
   padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  z-index: 1;
 }
 footer h2 {
   text-align: center;
