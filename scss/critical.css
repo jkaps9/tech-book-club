@@ -495,6 +495,10 @@ figure footer cite {
   letter-spacing: -0.5px;
 }
 
+section.testimonial {
+  margin: clamp(4rem, 2.7676rem + 5.2582vw, 7.5rem) 0;
+}
+
 .testimonial__container {
   display: flex;
   flex-direction: column;
@@ -510,7 +514,7 @@ figure footer cite {
 .footer__bg-image {
   position: absolute;
   height: 100%;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
@@ -521,6 +525,7 @@ figure footer cite {
 }
 
 footer {
+  overflow: hidden;
   position: relative;
   padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
   z-index: 1;
