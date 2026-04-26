@@ -1,5 +1,42 @@
-<footer>
+<footer class="bg-dark">
   <div class="container">
-    <p>Copyright 2025</p>
+    <div class="footer__content">
+      <h2>Ready to debug your reading list?</h2>
+      <a
+        href="#"
+        class="btn--primary"
+      >
+        Review Membership Options {% include "svgs/icon-arrow-up.svg" %}
+      </a>
+      <div class="footer__trust-row">
+        <img
+          src="{{ './assets/images/image-avatars.webp' | url }}"
+          alt="testimonial images"
+        />
+        <div class="right">
+          <div class="stars">
+            {% include "svgs/icon-star.svg" %}
+            {% include "svgs/icon-star.svg" %}
+            {% include "svgs/icon-star.svg" %}
+            {% include "svgs/icon-star.svg" %}
+            {% include "svgs/icon-star.svg" %}
+          </div>
+          <p>200+ developers joined already</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 - Tech Book Club</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="https://bsky.app">{% include "svgs/logo-bluesky.svg" %}</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com">
+            {% include "svgs/logo-linkedin.svg" %}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
