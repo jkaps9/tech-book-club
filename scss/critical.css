@@ -288,6 +288,7 @@ figure footer cite {
   gap: 4rem;
 }
 .hero__content {
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -517,45 +518,51 @@ section.testimonial {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: -1;
 }
 .footer__bg-image div {
   height: auto;
   width: auto;
 }
 
-footer {
+.footer {
   overflow: hidden;
-  position: relative;
   padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
-  z-index: 1;
+  position: relative;
+  z-index: 3;
 }
-footer h2 {
+.footer h2 {
   text-align: center;
 }
-footer .btn--primary {
+.footer .btn--primary {
   background-color: transparent;
   border-color: var(--neutral-100);
 }
-footer .container {
+.footer .btn--primary:hover {
+  color: var(--neutral-900);
+}
+.footer .btn--primary:hover svg * {
+  fill: var(--neutral-900);
+}
+.footer .container {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-footer .footer__content {
+.footer .footer__content {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
   max-width: 750px;
 }
-footer .footer__content .bottom {
+.footer .footer__content .bottom {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-footer .footer__bottom {
+.footer .footer__bottom {
   align-items: center;
   align-self: stretch;
   border-top: 1px solid var(--neutral-700);
@@ -564,16 +571,19 @@ footer .footer__bottom {
   gap: 1rem;
   padding: 1.5rem 0;
 }
-footer .footer__bottom p {
+.footer .footer__bottom p {
   font-size: 0.875rem;
   font-family: "Martian Mono", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -1px;
 }
-footer .footer__socials {
+.footer .footer__socials {
   display: flex;
   gap: 1.5rem;
+}
+.footer .footer__socials a:hover svg * {
+  fill: var(--light-salmon-500);
 }
 
 @media (min-width: 48rem) {
@@ -584,7 +594,7 @@ footer .footer__socials {
   .pricing__card-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  footer .footer__bottom {
+  .footer .footer__bottom {
     flex-direction: row;
     justify-content: space-between;
     left: 50%;
