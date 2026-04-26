@@ -57,6 +57,19 @@ h3 {
   color: var(--neutral-900);
 }
 
+figure {
+  blockquote {
+    p {
+      @include text.text-preset-3;
+    }
+  }
+  footer {
+    cite {
+      font-style: normal;
+    }
+  }
+}
+
 .bg--top {
   background-color: var(--neutral-100);
   position: absolute;
@@ -304,6 +317,21 @@ h3 {
   }
 }
 
+.testimonial {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 footer {
   background-color: white;
   text-align: center;
@@ -398,6 +426,18 @@ footer {
     &__card--featured {
       padding-block: 2.5rem;
       min-width: 350px;
+    }
+  }
+
+  .testimonial {
+    &__container {
+      align-items: center;
+    }
+
+    &__item {
+      align-items: center;
+      max-width: 60rem;
+      text-align: center;
     }
   }
 }
