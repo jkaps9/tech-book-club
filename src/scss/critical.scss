@@ -341,8 +341,20 @@ figure {
   }
 }
 
+.footer__bg-image {
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+
+  div {
+    height: auto;
+    width: auto;
+  }
+}
+
 footer {
-  padding-top: 3rem;
+  padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
 
   h2 {
     text-align: center;
