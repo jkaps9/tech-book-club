@@ -364,6 +364,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    max-width: 750px;
 
     .bottom {
       align-items: center;
@@ -416,6 +417,7 @@ footer {
       position: relative;
       transform: translateX(-50%);
       width: 100vw;
+      max-width: 1170px;
     }
   }
 }
