@@ -192,10 +192,11 @@ h3 {
       position: absolute;
       bottom: 0;
       right: 0;
+      filter: blur(50px);
+      opacity: 1;
+      z-index: 0;
     }
   }
-
-  // TODO: fix journey bg image
 
   &__list {
     display: grid;
@@ -205,6 +206,8 @@ h3 {
   &__item {
     display: grid;
     gap: clamp(1.25rem, 1.0115rem + 1.0178vw, 1.5rem);
+    position: relative;
+    z-index: 1;
     p {
       @include text.text-preset-6;
     }
@@ -267,11 +270,11 @@ h3 {
       .glow {
         position: absolute;
         bottom: -10px;
+        filter: blur(15px);
+        opacity: 0.4;
         right: 0;
         width: 100%;
         z-index: 1;
-
-        // TODO: fix glow to be more transparent
       }
     }
   }
