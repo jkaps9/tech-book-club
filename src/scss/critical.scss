@@ -102,6 +102,7 @@ figure {
   }
 
   &__content {
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -353,7 +354,7 @@ section.testimonial {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: -1;
 
   div {
     height: auto;
@@ -361,11 +362,11 @@ section.testimonial {
   }
 }
 
-footer {
+.footer {
   overflow: hidden;
-  position: relative;
   padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
-  z-index: 1;
+  position: relative;
+  z-index: 3;
 
   h2 {
     text-align: center;
@@ -374,6 +375,12 @@ footer {
   .btn--primary {
     background-color: transparent;
     border-color: var(--neutral-100);
+    &:hover {
+      color: var(--neutral-900);
+      svg * {
+        fill: var(--neutral-900);
+      }
+    }
   }
 
   .container {
@@ -414,6 +421,11 @@ footer {
   .footer__socials {
     display: flex;
     gap: 1.5rem;
+    a:hover {
+      svg * {
+        fill: var(--light-salmon-500);
+      }
+    }
   }
 }
 
@@ -431,7 +443,7 @@ footer {
     }
   }
 
-  footer {
+  .footer {
     .footer__bottom {
       flex-direction: row;
       justify-content: space-between;
