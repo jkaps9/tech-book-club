@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/jkaps9/creative](https://github.com/jkaps9/creative)
-- Live Site URL: [https://jkaps9.github.io/creative/](https://jkaps9.github.io/creative/)
+- Solution URL: [https://github.com/jkaps9/tech-book-club](https://github.com/jkaps9/tech-book-club)
+- Live Site URL: [https://jkaps9.github.io/tech-book-club/](https://jkaps9.github.io/tech-book-club/)
 
 ## My process
 
@@ -43,5 +43,4 @@ Users should be able to:
 
 ## Author
 
-- Website - [Josh](https://www.joshfkaplan.com)
 - Frontend Mentor - [@jkaps9](https://www.frontendmentor.io/profile/jkaps9)
