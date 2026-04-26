@@ -82,7 +82,9 @@ figure {
 }
 
 .bg--dark {
+  position: relative;
   background-color: var(--neutral-900);
+  z-index: -1;
   h2,
   p,
   a {
@@ -343,9 +345,11 @@ figure {
 
 .footer__bg-image {
   position: absolute;
-  height: auto;
+  height: 100%;
   bottom: 0;
+  left: 0;
   width: 100%;
+  z-index: 2;
 
   div {
     height: auto;
@@ -354,7 +358,9 @@ figure {
 }
 
 footer {
+  position: relative;
   padding-top: clamp(3rem, 2.2958rem + 3.0047vw, 5rem);
+  z-index: 1;
 
   h2 {
     text-align: center;
